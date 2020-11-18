@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<iframe width="640" height="360" src="http://hitbox.tv/#!/embed/Megatronix?autoplay=true" frameborder="0" allowfullscreen></iframe>
+        <style>
+            .button {
+              display: inline-block;
+              padding: 15px 25px;
+              font-size: 24px;
+              cursor: pointer;
+              text-align: center;
+              text-decoration: none;
+              outline: none;
+              color: #fff;
+              background-color: #FF0000;
+              border: none;
+              border-radius: 15px;
+              box-shadow: 0 9px #999;
+            }
+             
+            .button:active,
+            .button-active {
+              background-color: #8B0000;
+              box-shadow: 0 5px #666;
+              transform: translateY(4px);
+            }
+             
+            #y {
+              position: absolute;
+              top: 467px;
+              left: 328px;
+            }
+            #d {
+              position: relative;
+              top: 90px;
+              left: 30px;
+             
+            }
+            #l {
+              position: relative;
+              top: 90px;
+              left: 30px;
+             
+            }
+            #r {
+              position: relative;
+              top: 90px;
+              left: 30px;
+            }
+             
+            #rst {
+              position: relative;
+              top: 90px;
+              left: 30px;
+            }
+             
+            #w {
+              display: inline-block;
+              padding: 15px 25px;
+              font-size: 24px;
+              cursor: pointer;
+              text-align: center;
+              text-decoration: none;
+              outline: none;
+              color: #fff;
+              background-color: #e7ec2f;
+              border: none;
+              border-radius: 15px;
+              box-shadow: 0 9px #999;
+              position: absolute;
+              top: 468px;
+              left: 75px;
+            }
+             
+            #w.button-active {
+              background-color: #938e02;
+              box-shadow: 0 5px #666;
+              transform: translateY(4px);
+            }
+             
+            #a {
+              display: inline-block;
+              padding: 15px 25px;
+              font-size: 24px;
+              cursor: pointer;
+              text-align: center;
+              text-decoration: none;
+              outline: none;
+              color: #fff;
+              background-color: #e7ec2f;
+              border: none;
+              border-radius: 15px;
+              box-shadow: 0 9px #999;
+              position: relative;
+              top: 90px;
+            }
+             
+            #a.button-active {
+              background-color: #938e02;
+              box-shadow: 0 5px #666;
+              transform: translateY(4px);
+            }
+             
+            #dd {
+              display: inline-block;
+              padding: 15px 25px;
+              font-size: 24px;
+              cursor: pointer;
+              text-align: center;
+              text-decoration: none;
+              outline: none;
+              color: #fff;
+              background-color: #e7ec2f;
+              border: none;
+              border-radius: 15px;
+              box-shadow: 0 9px #999;
+              position: relative;
+              top: 90px;
+            }
+             
+            #dd.button-active {
+              background-color: #938e02;
+              box-shadow: 0 5px #666;
+              transform: translateY(4px);
+            }
+             
+            #s {
+              display: inline-block;
+              padding: 15px 25px;
+              font-size: 24px;
+              cursor: pointer;
+              text-align: center;
+              text-decoration: none;
+              outline: none;
+              color: #fff;
+              background-color: #e7ec2f;
+              border: none;
+              border-radius: 15px;
+              box-shadow: 0 9px #999;
+              position: relative;
+              top: 90px;
+            }
+             
+            #s.button-active {
+              background-color: #938e02;
+              box-shadow: 0 5px #666;
+              transform: translateY(4px);
+            }
+        </style>
+        <script type="text/javascript">
+	        var status = 0
+
+	        $(window).keyup(function (e) {
+	         
+	         
+	              if (e.keyCode === 37) {
+	                    e.preventDefault()
+			    $.ajax({
+				   type: "POST",
+				   url: 'localhost',
+				   contentType: "charset=utf-8",
+			           data:{"Stop": "movement"},
+			           success: function(){
+				   	console.log("Stopping");
+					},
+				   error: function(err){
+					console.log(err);
+					},
+				   });
+			    status = 0;
+	
+	              };
+	              if (e.keyCode === 38) {
+	                    e.preventDefault()
+			    $.ajax({
+				   type: "POST",
+				   url: 'localhost',
+				   contentType: "charset=utf-8",
+			           data:{"Stop": "movement"},
+			           success: function(){
+				   	console.log("Stopping");
+					},
+				   error: function(err){
+					console.log(err);
+					},
+				   });
+			    status = 0;
+			    
+	              };
+	              if (e.keyCode === 39) {
+	                    e.preventDefault()
+			    $.ajax({
+				   type: "POST",
+				   url: 'localhost',
+				   contentType: "charset=utf-8",
+			           data:{"Stop": "movement"},
+			           success: function(){
+				   	console.log("Stopping");
+					},
+				   error: function(err){
+					console.log(err);
+					},
+				   });
+			    status = 0;
+	              };
+	              if (e.keyCode === 40) {
+	                    e.preventDefault()
+			    $.ajax({
+				   type: "POST",
+				   url: 'localhost',
+				   contentType: "charset=utf-8",
+			           data:{"Stop": "movement"},
+			           success: function(){
+				   	console.log("Stopping");
+					},
+				   error: function(err){
+					console.log(err);
+					},
+				   });
+			    status = 0;
+	              };
+	              if (e.keyCode === 88) {
+	                    e.preventDefault()  
+	                    console.log("X")
+	              };
+	              if (e.keyCode === 68) {
+	                    e.preventDefault()  
+			    $.ajax({
+				   type: "POST",
+				   url: 'localhost',
+				   contentType: "charset=utf-8",
+			           data:{"Camera": "right"},
+			           success: function(){
+				   	console.log("camera right");
+					},
+				   error: function(err){
+					console.log(err);
+					},
+				   });
+	              };
+	              if (e.keyCode === 65) {
+	                    e.preventDefault()  
+			    $.ajax({
+				   type: "POST",
+				   url: 'localhost',
+				   contentType: "charset=utf-8",
+			           data:{"Camera": "left"},
+			           success: function(){
+				   	console.log("camera left");
+					},
+				   error: function(err){
+					console.log(err);
+					},
+				   });
+			    status = 0;
+	              };
+	              if (e.keyCode === 87) {
+	                    e.preventDefault()  
+	                    console.log("W")
+	              };
+	              if (e.keyCode === 83) {
+	                    e.preventDefault()  
+			    $.ajax({
+				   type: "POST",
+				   url: 'localhost',
+				   contentType: "charset=utf-8",
+			           data:{"Camera": "center"},
+			           success: function(){
+				   	console.log("camera center");
+					},
+				   error: function(err){
+					console.log(err);
+					},
+				   });
+	              };
+	              if (e.keyCode === 79) {
+	                    e.preventDefault()  
+	                    console.log("RESET")
+	              };                
+        	});
+	      
+		document.onkeydown = function(e) {
+
+		
+		if ((e.which || e.keyCode) == 37) {
+		    
+		    if(status == 0) {
+			document.getElementById('l').click();
+		    	$.ajax({
+			   	type: "POST",
+			   	url: 'localhost',
+			   	contentType: "charset=utf-8",
+		           	data:{"Direction": "left"},
+		           	success: function(){
+			   		console.log("vasen success");
+					},
+			   	error: function(err){
+					console.log(err);
+					},
+			   	});
+			status = 1;
+			};
+	
+	            if (document.getElementById('l').className.indexOf("button-active") == -1) document.getElementById('l').className += ' button-active';
+	          }
+	          if ((e.which || e.keyCode) == 38) {
+	            document.getElementById('y').click();
+		    if(status == 0) {
+			$.ajax({
+			       type: "POST",
+			       url: 'localhost',
+			       contentType: "charset=utf-8",
+			       data:{"Direction": "forward"},
+			       success: function(){
+				    console.log("forward success");
+				    },
+			       error: function(err){
+				    console.log(err);
+				    },
+			       });
+			status = 1;
+			};
+	            if (document.getElementById('y').className.indexOf("button-active") == -1) document.getElementById('y').className += ' button-active';
+	          }
+	          if ((e.which || e.keyCode) == 39) {
+	            document.getElementById('r').click();
+		    if(status == 0) {
+			$.ajax({
+			       type: "POST",
+			       url: 'localhost',
+			       contentType: "charset=utf-8",
+			       data:{"Direction": "right"},
+			       success: function(){
+				    console.log("right success");
+				    },
+			       error: function(err){
+				    console.log(err);
+				    },
+			       });
+			status = 1;
+			};
+	            if (document.getElementById('r').className.indexOf("button-active") == -1) document.getElementById('r').className += ' button-active';
+	          }
+	          if ((e.which || e.keyCode) == 40) {
+	            document.getElementById('d').click();
+		    if(status == 0) {
+			$.ajax({
+			       type: "POST",
+			       url: 'localhost',
+			       contentType: "charset=utf-8",
+			       data:{"Direction": "back"},
+			       success: function(){
+				    console.log("back success");
+				    },
+			       error: function(err){
+				    console.log(err);
+				    },
+			       });
+			status = 1;
+			};
+	            if (document.getElementById('d').className.indexOf("button-active") == -1) document.getElementById('d').className += ' button-active';
+	          }
+	          if ((e.which || e.keyCode) == 87) {
+	            document.getElementById('w').click();
+	            if (document.getElementById('w').className.indexOf("button-active") == -1) document.getElementById('w').className += ' button-active';
+	          }
+	          if ((e.which || e.keyCode) == 65) {
+	            document.getElementById('a').click();
+	            if (document.getElementById('a').className.indexOf("button-active") == -1) document.getElementById('a').className += ' button-active';
+	          }
+	          if ((e.which || e.keyCode) == 83) {
+	            document.getElementById('s').click();
+	            if (document.getElementById('s').className.indexOf("button-active") == -1) document.getElementById('s').className += ' button-active';
+	          }
+	          if ((e.which || e.keyCode) == 68) {
+	            document.getElementById('dd').click();
+	            if (document.getElementById('dd').className.indexOf("button-active") == -1) document.getElementById('dd').className += ' button-active';
+	          }
+	         
+	          if ((e.which || e.keyCode) == 79) {
+	            document.getElementById('rst').click();
+	            if (document.getElementById('rst').className.indexOf("button-active") == -1) document.getElementById('rst').className += ' button-active';
+	          }
+	        };
+	         
+	        document.onkeyup = function(e) {
+	          document.getElementById('y').className = document.getElementById('y').className.replace(/button\-active/g, "");
+	          document.getElementById('d').className = document.getElementById('d').className.replace(/button\-active/g, "");
+	          document.getElementById('l').className = document.getElementById('l').className.replace(/button\-active/g, "");
+	          document.getElementById('r').className = document.getElementById('r').className.replace(/button\-active/g, "");
+	          document.getElementById('w').className = document.getElementById('w').className.replace(/button\-active/g, "");
+	          document.getElementById('a').className = document.getElementById('a').className.replace(/button\-active/g, "");
+	          document.getElementById('s').className = document.getElementById('s').className.replace(/button\-active/g, "");
+	          document.getElementById('dd').className = document.getElementById('dd').className.replace(/button\-active/g, "");
+	          document.getElementById('rst').className = document.getElementById('rst').className.replace(/button\-active/g, "");
+        }
+         
+        </script>
+    </head>
+    
+    <body>
+        <h1> Spider Cam v.3 </h1>
+        <button id="a" class="button">A</button>
+        <button id="w" class="button">W</button>
+        <button id="s" class="button">S</button>
+        <button id="dd" class="button">D</button>
+        <button id="l" class="button">&#9668</button>
+        <button id="y" class="button">&#9650</button>
+        <button id="d" class="button">&#9660</button>
+        <button id="r" class="button">&#9658</button>
+        <button id="rst" class="button">RESET</button>
+    </body>
+    
+</html>
